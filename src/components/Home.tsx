@@ -73,8 +73,8 @@ const Home = () => {
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.6 + i * 0.08 }}
-                  className="px-4 py-2 text-sm rounded-full border border-border bg-secondary/50 text-secondary-foreground"
+                  transition={{ delay: 0.4 + i * 0.06 }}
+                  className="px-4 py-2 text-sm font-medium rounded-full border border-primary/25 bg-primary/5 text-primary"
                 >
                   {skill}
                 </motion.span>
