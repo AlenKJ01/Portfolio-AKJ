@@ -1,13 +1,23 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import {
   Cpu, TrendingUp, Settings2, LineChart, FlaskConical, Activity,
   Brain, Share2, Eye, ScanText, Bot, Database, Plug, Network,
-} from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
+  Cloud, BarChart3, MousePointer2
+} from "lucide-react";
+
+import {
+  SiPython, SiMysql, SiHtml5, SiCss, SiJavascript,
+  SiMongodb, SiPostgresql, SiScikitlearn,
+  SiPytorch, SiTensorflow, SiOpencv, SiHuggingface,
+  SiDocker, SiGit, SiGooglecloud, SiPostman,
+  SiFastapi, SiFlask, SiLangchain, SiOpenai
+} from "react-icons/si";
+
+import type { IconType } from "react-icons";
 
 interface Skill {
   name: string;
-  Icon: LucideIcon | null;
+  Icon: IconType;
   label?: string;
 }
 
@@ -18,89 +28,84 @@ interface SkillCategory {
 
 const categories: SkillCategory[] = [
   {
-    title: 'Programming',
+    title: "Programming",
     skills: [
-      { name: 'Python', Icon: null, label: 'PY' },
-      { name: 'SQL', Icon: Database, },
-      { name: 'HTML5', Icon: null, label: 'H5' },
-      { name: 'CSS3', Icon: null, label: 'C3' },
-      { name: 'JavaScript', Icon: null, label: 'JS' },
+      { name: "Python", Icon: SiPython },
+      { name: "SQL", Icon: SiMysql },
+      { name: "HTML5", Icon: SiHtml5 },
+      { name: "CSS3", Icon: SiCss },
+      { name: "JavaScript", Icon: SiJavascript },
     ],
   },
   {
-    title: 'Databases & Data Infrastructure',
+    title: "Databases & Data Infrastructure",
     skills: [
-      { name: 'MySQL', Icon: Database },
-      { name: 'MongoDB', Icon: Database },
-      { name: 'PostgreSQL', Icon: Database },
+      { name: "MySQL", Icon: SiMysql },
+      { name: "MongoDB", Icon: SiMongodb },
+      { name: "PostgreSQL", Icon: SiPostgresql },
     ],
   },
   {
-    title: 'Machine Learning & Statistical Modelling',
+    title: "Machine Learning & Statistical Modelling",
     skills: [
-      { name: 'Machine Learning', Icon: Cpu },
-      { name: 'Predictive Modeling', Icon: TrendingUp },
-      { name: 'Feature Engineering', Icon: Settings2 },
-      { name: 'Statistical Analysis', Icon: LineChart },
-      { name: 'Hypothesis Testing', Icon: FlaskConical },
-      { name: 'Time-Series Forecasting', Icon: Activity },
-      { name: 'Scikit-learn', Icon: null, label: 'SK' },
+      { name: "Machine Learning", Icon: Cpu },
+      { name: "Predictive Modeling", Icon: TrendingUp },
+      { name: "Feature Engineering", Icon: Settings2 },
+      { name: "Statistical Analysis", Icon: LineChart },
+      { name: "Hypothesis Testing", Icon: FlaskConical },
+      { name: "Time-Series Forecasting", Icon: Activity },
+      { name: "Scikit-learn", Icon: SiScikitlearn },
     ],
   },
   {
-    title: 'Deep Learning, Vision & NLP',
+    title: "Deep Learning, Vision & NLP",
     skills: [
-      { name: 'Deep Learning', Icon: Brain },
-      { name: 'Neural Networks', Icon: Share2 },
-      { name: 'PyTorch', Icon: null, label: 'PT' },
-      { name: 'TensorFlow', Icon: null, label: 'TF' },
-      { name: 'Computer Vision', Icon: Eye },
-      { name: 'OpenCV', Icon: Eye },
-      { name: 'HuggingFace', Icon: null, label: 'HF' },
-      { name: 'YOLO', Icon: Eye },
-      { name: 'Detectron2', Icon: Cpu },
-      { name: 'OCR', Icon: ScanText },
-      { name: 'LLM', Icon: Bot },
-      { name: 'RAG', Icon: Database },
-      { name: 'LangChain', Icon: null, label: 'LC' },
-      { name: 'LangGraph', Icon: null, label: 'LG' },
-      { name: 'AI Agents', Icon: Bot },
+      { name: "Deep Learning", Icon: Brain },
+      { name: "Neural Networks", Icon: Share2 },
+      { name: "PyTorch", Icon: SiPytorch },
+      { name: "TensorFlow", Icon: SiTensorflow },
+      { name: "Computer Vision", Icon: Eye },
+      { name: "OpenCV", Icon: SiOpencv },
+      { name: "HuggingFace", Icon: SiHuggingface },
+      { name: "YOLO", Icon: Eye },
+      { name: "Detectron2", Icon: Cpu },
+      { name: "OCR", Icon: ScanText },
+      { name: "LLM", Icon: Bot },
+      { name: "RAG", Icon: Database },
+      { name: "LangChain", Icon: SiLangchain },
+      { name: "LangGraph", Icon: Network },
+      { name: "AI Agents", Icon: Bot },
     ],
   },
   {
-    title: 'Deployment, APIs & Tools',
+    title: "Deployment, APIs & Tools",
     skills: [
-      { name: 'FastAPI', Icon: null, label: 'FA' },
-      { name: 'Flask', Icon: FlaskConical },
-      { name: 'REST APIs', Icon: Plug },
-      { name: 'Docker', Icon: null, label: 'DK' },
-      { name: 'Git', Icon: null, label: 'GIT' },
-      { name: 'AWS', Icon: null, label: 'AWS' },
-      { name: 'GCP', Icon: null, label: 'GCP' },
-      { name: 'Power BI', Icon: null, label: 'PBI' },
-      { name: 'Postman', Icon: null, label: 'PM' },
-      { name: 'MCP', Icon: Network },
-      { name: 'Claude', Icon: Bot },
-      { name: 'Gemini', Icon: Bot },
-      { name: 'Cursor', Icon: null, label: 'CR' },
-      { name: 'OpenAI', Icon: Bot },
-      { name: 'Llama', Icon: null, label: 'LL' },
-      { name: 'Copilot', Icon: Bot },
+      { name: "FastAPI", Icon: SiFastapi },
+      { name: "Flask", Icon: SiFlask },
+      { name: "REST APIs", Icon: Plug },
+      { name: "Docker", Icon: SiDocker },
+      { name: "Git", Icon: SiGit },
+      { name: "AWS", Icon: Cloud },
+      { name: "GCP", Icon: SiGooglecloud },
+      { name: "Power BI", Icon: BarChart3 },
+      { name: "Postman", Icon: SiPostman },
+      { name: "MCP", Icon: Network },
+      { name: "Claude", Icon: Bot },
+      { name: "Gemini", Icon: Bot },
+      { name: "Cursor", Icon: MousePointer2 },
+      { name: "OpenAI", Icon: SiOpenai },
+      { name: "Llama", Icon: Bot },
+      { name: "Copilot", Icon: Bot },
     ],
   },
 ];
 
 const SkillCard = ({ skill }: { skill: Skill }) => {
-  const { name, Icon, label } = skill;
+  const { name, Icon } = skill;
+
   return (
     <div className="skill-card flex items-center gap-3 px-4 py-3 rounded-lg border border-border/50 bg-card/50">
-      {Icon ? (
-        <Icon size={20} className="text-primary flex-shrink-0" />
-      ) : (
-        <span className="w-5 h-5 flex items-center justify-center text-[10px] font-bold text-primary bg-primary/10 rounded flex-shrink-0">
-          {label}
-        </span>
-      )}
+      <Icon size={20} className="text-primary flex-shrink-0" />
       <span className="text-sm text-foreground">{name}</span>
     </div>
   );
