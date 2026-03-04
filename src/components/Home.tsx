@@ -54,7 +54,7 @@ const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="mt-6 text-muted-foreground text-lg max-w-xl leading-relaxed"
+              className="mt-6 text-white text-lg max-w-xl leading-relaxed"
             >
               Building production-ready ML, Computer Vision, and LLM systems that solve real-world problems.
               I'm passionate about designing intelligent pipelines from raw data to deployed systems.
