@@ -111,7 +111,7 @@
   background: hsl(var(--secondary));
 }
 
-/* Nav underline */
+ /* Nav underline */
 .nav-link {
   @apply relative;
 }
@@ -122,7 +122,7 @@
 .nav-link:hover::after,
 .nav-link.active::after {
   @apply scale-x-100 origin-left;
-}
+} 
 
 .aurora-container {
   position: absolute;
@@ -143,13 +143,13 @@
 /* colors */
 
 .aurora1 {
-  background: radial-gradient(circle, rgba(12, 46, 38, 0.45), transparent 70%);
+  background: radial-gradient(circle, rgba(15, 39, 33, 0.45), transparent 70%);
   top: 10%;
   left: 10%;
 }
 
 .aurora2 {
-  background: radial-gradient(circle, rgba(15, 46, 78, 0.729), transparent 70%);
+  background: radial-gradient(circle, rgba(10, 28, 47, 0.729), transparent 70%);
   top: 60%;
   left: 40%;
   animation-duration: 24s;
@@ -163,7 +163,7 @@
 }
 
 .aurora4 {
-  background: radial-gradient(circle, rgba(174, 0, 255, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(47, 6, 66, 0.35), transparent 70%);
   bottom: 10%;
   left: 20%;
   animation-duration: 22s;
@@ -213,3 +213,4 @@
     transform: translateX(-80px);
   }
 }
+

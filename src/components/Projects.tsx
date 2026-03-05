@@ -20,7 +20,7 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="font-display text-3xl md:text-4xl font-bold">Selected Projects</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold">Featured Projects</h2>
           <p className="text-muted-foreground mt-2 mb-12">
             A collection of AI, ML, and data-driven systems I've built.
           </p>

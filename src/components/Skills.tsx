@@ -100,13 +100,43 @@ const categories: SkillCategory[] = [
   },
 ];
 
+import { useRef } from "react";
+
 const SkillCard = ({ skill }: { skill: Skill }) => {
   const { name, Icon } = skill;
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = cardRef.current?.getBoundingClientRect();
+    if (!rect) return;
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    cardRef.current?.style.setProperty("--x", `${x}px`);
+    cardRef.current?.style.setProperty("--y", `${y}px`);
+  };
 
   return (
-    <div className="skill-card flex items-center gap-3 px-4 py-3 rounded-lg border border-border/50 bg-card/50">
-      <Icon size={20} className="text-primary flex-shrink-0" />
-      <span className="text-sm text-foreground">{name}</span>
+    <div
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      className="group relative flex items-center gap-3 px-4 py-3 rounded-lg border border-border/50 bg-card/50 overflow-hidden transition-colors duration-300"
+    >
+      {/* Cursor glow layer */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        style={{
+          background:
+            "radial-gradient(120px circle at var(--x) var(--y), rgba(54,193,163,0.25), transparent 60%)",
+        }}
+      />
+
+      {/* Content */}
+      <div className="relative flex items-center gap-3">
+        <Icon size={20} className="text-primary flex-shrink-0" />
+        <span className="text-sm text-foreground">{name}</span>
+      </div>
     </div>
   );
 };

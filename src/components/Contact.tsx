@@ -30,7 +30,9 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="glass rounded-2xl p-8 md:p-12 max-w-lg mx-auto"
+          className="relative rounded-2xl p-8 md:p-12 max-w-lg mx-auto 
+          bg-white/5 backdrop-blur-xl border border-white/10 
+          shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
         >
           <h3 className="font-display text-2xl font-bold mb-8">Alen K Johnson</h3>
 
@@ -69,7 +71,7 @@ const Contact = () => {
               <Github size={28} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/alenkj/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary/70 hover:text-primary transition-opacity"

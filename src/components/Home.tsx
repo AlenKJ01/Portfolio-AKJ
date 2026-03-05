@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Linkedin, Github, Mail } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
 
 const skills = [
   'Python', 'Machine Learning', 'LLM Systems & RAG', 'Computer Vision',
@@ -19,12 +20,24 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-center gap-5"
           >
-            <div className="w-40 h-40 lg:w-52 lg:h-52 rounded-full bg-secondary border-2 border-primary/20 flex items-center justify-center overflow-hidden">
-              <span className="text-4xl font-display font-bold text-primary">AKJ</span>
+            <div className="relative w-40 h-40 lg:w-52 lg:h-52 animate-float">
+
+              {/* rotating gradient ring */}
+              <div className="absolute inset-0 rounded-full p-[3px] bg-gradient-to-r from-teal-400 via-cyan-400 to-teal-400 animate-spinSlow blur-[1px]" />
+
+              {/* profile image */}
+              <div className="relative w-full h-full rounded-full overflow-hidden border border-white/10 animate-pulseGlow">
+                <img
+                  src="/images/pr2.png"
+                  alt="Alen K Johnson"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
             </div>
             <h2 className="font-display text-xl font-semibold text-foreground">Alen K Johnson</h2>
             <div className="flex gap-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/alenkj/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={22} />
               </a>
               <a href="https://github.com/AlenKJ01" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">

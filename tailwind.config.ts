@@ -13,6 +13,7 @@ export default {
       },
     },
     extend: {
+      
       fontFamily: {
         display: ['"Space Grotesk"', 'sans-serif'],
         body: ['"Inter"', 'sans-serif'],
@@ -68,18 +69,26 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-12px)" },
         },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+
+        pulseGlow: {
+          "0%, 100%": { boxShadow: "0 0 25px rgba(45,212,191,0.35)" },
+          "50%": { boxShadow: "0 0 45px rgba(45,212,191,0.65)" },
+        },
+
+        spinSlow: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
         },
       },
+
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        float: "float 6s ease-in-out infinite",
+        pulseGlow: "pulseGlow 4s ease-in-out infinite",
+        spinSlow: "spinSlow 12s linear infinite",
       },
     },
   },

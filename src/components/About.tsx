@@ -126,7 +126,7 @@ const About = () => {
           >
 
             <h3 className="text-2xl font-semibold mb-6 text-white">
-              About Me
+              Who I Am
             </h3>
 
             <p className="text-white/90 leading-relaxed mb-4">
@@ -136,7 +136,7 @@ const About = () => {
 
             <p className="text-white/80 leading-relaxed mb-4">
               My work spans Machine Learning, Computer Vision, and LLM-based
-              applications, where I design end-to-end pipelines—from data processing
+              applications, where I design end-to-end pipelines from data processing
               and model development to deployable AI solutions.
             </p>
 
