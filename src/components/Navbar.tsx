@@ -35,13 +35,31 @@ const Navbar = ({ activeSection }: NavbarProps) => {
             : 'bg-transparent'
         }`}
       >
-        {/* Logo */}
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="font-display font-bold text-xl tracking-wider text-foreground hover:opacity-80 transition-opacity"
-        >
-          AKJ<span className="text-primary">.</span>
-        </button>
+      
+        <div className="flex items-center gap-6">
+
+          {/* Logo */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="font-display font-bold text-xl tracking-wider text-foreground hover:opacity-80 transition-opacity"
+          >
+            AKJ<span className="text-primary">.</span>
+          </button>
+
+        </div>
+
+        {/* Center Tagline */}
+        <div className="hidden md:flex flex-1 justify-center">
+          <span
+            className="text-xs font-medium tracking-[0.35em]"
+            style={{
+              color: "#36c1a3",
+              textShadow: "0 0 6px rgba(0, 0, 0, 0.6), 0 0 14px rgba(0, 0, 0, 0.35)"
+            }}
+          >
+            ARTIFICIAL INTELLIGENCE • MACHINE LEARNING • DATA SCIENCE
+          </span>
+        </div>
 
         {/* Nav Links */}
         <ul className="hidden md:flex items-center gap-8">
