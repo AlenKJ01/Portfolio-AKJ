@@ -6,6 +6,7 @@ export interface Project {
   tech: string;
   github: string;
   featured: boolean;
+  image: string | null
 }
 
 export const projects: Project[] = [
@@ -21,6 +22,7 @@ export const projects: Project[] = [
     tech: 'Image Processing · OpenCV · OCR · TesseractOCR · Object Detection',
     github: '#',
     featured: true,
+    image: 'projects/c1.png',
   },
   {
     id: 2,
@@ -33,6 +35,7 @@ export const projects: Project[] = [
     tech: 'Python · Flask · Mistral · ChromaDB · Pydantic · SentenceTransformers',
     github: 'https://github.com/AlenKJ01/Spec-Drift-Radar.git',
     featured: true,
+    image: 'projects/c2.png',
   },
   {
     id: 3,
@@ -45,6 +48,7 @@ export const projects: Project[] = [
     tech: 'Python · FastAPI · FAISS · Reportlab · Gemini · Vector Similarity',
     github: '#',
     featured: true,
+    image: 'projects/c3.png',
   },
   {
     id: 4,
@@ -57,6 +61,7 @@ export const projects: Project[] = [
     tech: 'Python · Streamlit · Gemini · Serper · MongoDB',
     github: 'https://github.com/AlenKJ01/Real-Estate-Price-Factor-Mining-Prediction-Engine.git',
     featured: true,
+    image: 'projects/c4.png',
   },
   {
     id: 5,
@@ -69,6 +74,7 @@ export const projects: Project[] = [
     tech: 'Python · LangChain · ChromaDB · HuggingFace · Streamlit · LLM API',
     github: 'https://github.com/AlenKJ01/RAGLine.git',
     featured: false,
+    image: null,
   },
   {
     id: 6,
@@ -81,6 +87,7 @@ export const projects: Project[] = [
     tech: 'Python · Flask · Gemini Flash Lite API · SQLite · HTML · JavaScript',
     github: 'https://github.com/AlenKJ01/ContextFlow.git',
     featured: false,
+    image: null,
   },
   {
     id: 7,
@@ -93,6 +100,7 @@ export const projects: Project[] = [
     tech: 'Python · Gemini API · Streamlit · LangChain · FAISS · PyPDF',
     github: 'https://github.com/AlenKJ01/GeminiDocQA.git',
     featured: false,
+    image: null,
   },
   {
     id: 8,
@@ -105,6 +113,7 @@ export const projects: Project[] = [
     tech: 'Python · Flask · SQLite · HTML · CSS · JavaScript',
     github: 'https://github.com/AlenKJ01/Notes-Versions.git',
     featured: false,
+    image: null,
   },
   {
     id: 9,
@@ -117,6 +126,7 @@ export const projects: Project[] = [
     tech: 'Python · Flask · NASA API · HTML · CSS · JavaScript',
     github: 'https://github.com/AlenKJ01/nasa.git',
     featured: false,
+    image: null,
   },
   {
     id: 10,
@@ -129,5 +139,6 @@ export const projects: Project[] = [
     tech: 'Python · Flask · SQLite · HTML · CSS · JavaScript',
     github: 'https://github.com/AlenKJ01/Mediconnect.git',
     featured: false,
+    image: null,
   },
 ];

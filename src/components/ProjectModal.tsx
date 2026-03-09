@@ -19,15 +19,18 @@ const ProjectModal = ({ project, onClose }: Props) => {
         className="fixed inset-0 z-[100] flex items-center justify-center p-4"
         onClick={onClose}
       >
+        {/* backdrop */}
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.9 }}
+          exit={{ opacity: 0, scale: 0.92 }}
           transition={{ duration: 0.25 }}
           onClick={(e) => e.stopPropagation()}
           className="relative z-10 w-full max-w-2xl rounded-xl border border-border bg-card p-8 shadow-2xl max-h-[85vh] overflow-y-auto"
         >
+          {/* close button */}
           <button
             onClick={onClose}
             className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
@@ -35,30 +38,64 @@ const ProjectModal = ({ project, onClose }: Props) => {
             <X size={20} />
           </button>
 
-          <div className="w-full h-48 rounded-lg bg-secondary mb-6 flex items-center justify-center">
-            <span className="text-muted-foreground text-sm">Project Preview</span>
+          {/* Project Image */}
+          <div className="w-full h-64 rounded-lg overflow-hidden mb-6">
+            {project.image ? (
+              <motion.img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover"
+                initial={{ scale: 1.1 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.5 }}
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center bg-secondary">
+                <span className="text-muted-foreground text-sm font-display">
+                  {project.title}
+                </span>
+              </div>
+            )}
           </div>
 
-          <h3 className="font-display text-2xl font-bold mb-1">{project.title}</h3>
-          <p className="text-muted-foreground text-sm mb-6">{project.subtitle}</p>
+          {/* Title */}
+          <h3 className="font-display text-2xl font-bold mb-1">
+            {project.title}
+          </h3>
 
+          {/* Subtitle */}
+          <p className="text-muted-foreground text-sm mb-6">
+            {project.subtitle}
+          </p>
+
+          {/* Description */}
           <div className="space-y-3 mb-6">
             {project.description.map((d, i) => (
-              <p key={i} className="text-muted-foreground leading-relaxed text-sm">• {d}</p>
+              <p key={i} className="text-muted-foreground leading-relaxed text-sm">
+                • {d}
+              </p>
             ))}
           </div>
 
+          {/* Tech stack */}
           <div className="mb-6">
-            <h4 className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Tech Stack</h4>
+            <h4 className="text-xs uppercase tracking-wider text-muted-foreground mb-2">
+              Tech Stack
+            </h4>
+
             <div className="flex flex-wrap gap-2">
               {project.tech.split(' · ').map((t) => (
-                <span key={t} className="px-3 py-1 text-xs rounded-full border border-border bg-secondary/50 text-secondary-foreground">
+                <span
+                  key={t}
+                  className="px-3 py-1 text-xs rounded-full border border-border bg-secondary/50 text-secondary-foreground"
+                >
                   {t}
                 </span>
               ))}
             </div>
           </div>
 
+          {/* GitHub link */}
           {project.github !== '#' && (
             <a
               href={project.github}

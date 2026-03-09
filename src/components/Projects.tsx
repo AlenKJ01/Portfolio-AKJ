@@ -37,9 +37,18 @@ const Projects = () => {
               onClick={() => setSelectedProject(project)}
               className="text-left group rounded-xl border border-border/50 bg-card/50 p-1 hover:border-primary/20 transition-all duration-300"
             >
-              <div className="w-full h-44 rounded-lg bg-secondary flex items-center justify-center mb-4">
-                <span className="text-muted-foreground/50 text-sm font-display">{project.title}</span>
+              
+              <div className="w-full h-44 rounded-lg overflow-hidden mb-4 relative">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               </div>
+
+
               <div className="px-3 pb-4">
                 <h3 className="font-display font-semibold text-lg group-hover:text-primary transition-colors">
                   {project.title}
