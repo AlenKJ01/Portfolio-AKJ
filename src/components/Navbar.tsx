@@ -57,7 +57,7 @@ const Navbar = ({ activeSection }: NavbarProps) => {
               textShadow: "0 0 6px rgba(0, 0, 0, 0.6), 0 0 14px rgba(0, 0, 0, 0.35)"
             }}
           >
-            ARTIFICIAL INTELLIGENCE • MACHINE LEARNING • DATA SCIENCE
+            AI • MACHINE LEARNING • DATA SCIENCE
           </span>
         </div>
 
