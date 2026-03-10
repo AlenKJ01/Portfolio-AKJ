@@ -10,7 +10,7 @@ import {
   SiMongodb, SiPostgresql, SiScikitlearn,
   SiPytorch, SiTensorflow, SiOpencv, SiHuggingface,
   SiDocker, SiGit, SiGooglecloud, SiPostman,
-  SiFastapi, SiFlask, SiLangchain, SiOpenai
+  SiFastapi, SiFlask, SiLangchain, SiOpenai, SiN8N
 } from "react-icons/si";
 
 import type { IconType } from "react-icons";
@@ -83,6 +83,7 @@ const categories: SkillCategory[] = [
       { name: "FastAPI", Icon: SiFastapi },
       { name: "Flask", Icon: SiFlask },
       { name: "REST APIs", Icon: Plug },
+      { name: "n8n", Icon: SiN8N },
       { name: "Docker", Icon: SiDocker },
       { name: "Git", Icon: SiGit },
       { name: "AWS", Icon: Cloud },
