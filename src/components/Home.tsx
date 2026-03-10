@@ -28,7 +28,7 @@ const Home = () => {
               {/* profile image */}
               <div className="relative w-full h-full rounded-full overflow-hidden border border-white/10 animate-pulseGlow">
                 <img
-                  src="/images/p.png"
+                  src="/images/pp.png"
                   alt="Alen K Johnson"
                   className="w-full h-full object-cover"
                 />
