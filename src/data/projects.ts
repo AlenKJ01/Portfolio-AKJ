@@ -22,7 +22,7 @@ export const projects: Project[] = [
     tech: 'Image Processing · OpenCV · OCR · TesseractOCR · Object Detection',
     github: '#',
     featured: true,
-    image: 'projects/c1.png',
+    image: 'projects/1.png',
   },
   {
     id: 2,
@@ -35,11 +35,11 @@ export const projects: Project[] = [
     tech: 'Python · Flask · Mistral · ChromaDB · Pydantic · SentenceTransformers',
     github: 'https://github.com/AlenKJ01/Spec-Drift-Radar.git',
     featured: true,
-    image: 'projects/c2.png',
+    image: 'projects/2.png',
   },
   {
     id: 3,
-    title: 'LLM-Based Resume Matcher & ATS Builder',
+    title: 'LLM-Based Rc2esume Matcher & ATS Builder',
     subtitle: 'AI resume matching and ATS optimization tool',
     description: [
       'Analyzes resume and job description alignment using vector similarity.',
@@ -48,7 +48,7 @@ export const projects: Project[] = [
     tech: 'Python · FastAPI · FAISS · Reportlab · Gemini · Vector Similarity',
     github: '#',
     featured: true,
-    image: 'projects/c3.png',
+    image: 'projects/3.png',
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     tech: 'Python · Streamlit · Gemini · Serper · MongoDB',
     github: 'https://github.com/AlenKJ01/Real-Estate-Price-Factor-Mining-Prediction-Engine.git',
     featured: true,
-    image: 'projects/c4.png',
+    image: 'projects/4.png',
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     tech: 'Python · LangChain · ChromaDB · HuggingFace · Streamlit · LLM API',
     github: 'https://github.com/AlenKJ01/RAGLine.git',
     featured: false,
-    image: null,
+    image: 'projects/5.png',
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     tech: 'Python · Flask · Gemini Flash Lite API · SQLite · HTML · JavaScript',
     github: 'https://github.com/AlenKJ01/ContextFlow.git',
     featured: false,
-    image: null,
+    image: 'projects/6.png',
   },
   {
     id: 7,
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     tech: 'Python · Gemini API · Streamlit · LangChain · FAISS · PyPDF',
     github: 'https://github.com/AlenKJ01/GeminiDocQA.git',
     featured: false,
-    image: null,
+    image: 'projects/7.png',
   },
   {
     id: 8,
@@ -113,7 +113,7 @@ export const projects: Project[] = [
     tech: 'Python · Flask · SQLite · HTML · CSS · JavaScript',
     github: 'https://github.com/AlenKJ01/Notes-Versions.git',
     featured: false,
-    image: null,
+    image: 'projects/8.png',
   },
   {
     id: 9,
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     tech: 'Python · Flask · NASA API · HTML · CSS · JavaScript',
     github: 'https://github.com/AlenKJ01/nasa.git',
     featured: false,
-    image: null,
+    image: 'projects/9.png',
   },
   {
     id: 10,
@@ -139,6 +139,6 @@ export const projects: Project[] = [
     tech: 'Python · Flask · SQLite · HTML · CSS · JavaScript',
     github: 'https://github.com/AlenKJ01/Mediconnect.git',
     featured: false,
-    image: null,
+    image: 'projects/10.png',
   },
 ];
