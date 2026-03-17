@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Linkedin, Github, Mail } from 'lucide-react';
+import { Linkedin, Github, Mail, Download } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
 
 const skills = [
@@ -28,7 +28,7 @@ const Home = () => {
               {/* profile image */}
               <div className="relative w-full h-full rounded-full overflow-hidden border border-white/10 animate-pulseGlow">
                 <img
-                  src="/images/pp.png"
+                  src="/images/pppp.png"
                   alt="Alen K Johnson"
                   className="w-full h-full object-cover"
                 />
@@ -47,6 +47,14 @@ const Home = () => {
                 <Mail size={22} />
               </a>
             </div>
+            <a
+              href="/Alen_KJ_Resume.pdf"
+              download
+              className="flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium text-primary border border-primary/30 bg-white/5 backdrop-blur-md hover:bg-primary/10 hover:border-primary/60 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(54,193,163,0.08)]"
+            >
+              <Download size={15} />
+              Resume
+            </a>
           </motion.div>
 
           {/* Right */}

@@ -55,9 +55,24 @@
     @apply border-border;
   }
 
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -88,6 +103,13 @@
 .snap-container {
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.snap-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
 }
 
 .snap-section {
@@ -213,4 +235,3 @@
     transform: translateX(-80px);
   }
 }
-
