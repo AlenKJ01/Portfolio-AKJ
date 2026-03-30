@@ -64,10 +64,15 @@ const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+              className="font-display font-bold leading-tight"
             >
-              Data Scientist &<br />
-              <span className="text-primary">AI / ML Engineer</span>
+              <span className="block text-4xl md:text-5xl lg:text-6xl text-foreground">
+                AI / ML Engineer 
+              </span>
+
+              <span className="block text-xl md:text-2xl lg:text-3xl text-primary mt-2">
+                & Data Scientist 
+              </span>
             </motion.h1>
 
             <motion.p
