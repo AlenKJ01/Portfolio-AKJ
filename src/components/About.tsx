@@ -1,4 +1,11 @@
 import { motion } from "framer-motion";
+import { Briefcase, User } from "lucide-react";
+
+const stats = [
+  { value: "10+", label: "Projects" },
+  { value: "2", label: "Internships" },
+  { value: "3", label: "AI Domains" },
+];
 
 const About = () => {
   return (
@@ -27,9 +34,12 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
 
-            <h3 className="text-2xl font-semibold text-white mb-10">
-              Internship Experience
-            </h3>
+            <div className="flex items-center gap-2 mb-8">
+              <Briefcase size={14} style={{ color: '#2fd6b0' }} />
+              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase" style={{ fontFamily: 'Syne, sans-serif' }}>
+                Internship Experience
+              </h3>
+            </div>
 
             <div className="relative pl-10">
 
@@ -125,9 +135,12 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
 
-            <h3 className="text-2xl font-semibold mb-6 text-white">
-              Who I Am
-            </h3>
+            <div className="flex items-center gap-2 mb-8">
+              <User size={14} style={{ color: '#2fd6b0' }} />
+              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase" style={{ fontFamily: 'Syne, sans-serif' }}>
+                Who I Am
+              </h3>
+            </div>
 
             <p className="text-white/90 leading-relaxed mb-4">
               I’m a Data Scientist and AI / ML Engineer focused on building intelligent
@@ -150,21 +163,34 @@ const About = () => {
               systems that deliver real impact.
             </p>
 
-            <div className="grid grid-cols-3 gap-6 mt-10">
-              <div>
-                <p className="text-2xl font-semibold text-teal-400">10+</p>
-                <p className="text-sm text-white/70">Projects</p>
-              </div>
+            <div className="grid grid-cols-3 gap-4 mt-10">
+              {stats.map(({ value, label }, i) => (
+                <motion.div
+                  key={label}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 + i * 0.1 }}
+                  className="rounded-xl p-4 text-center backdrop-blur-md shadow-lg"
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.05)', // more neutral glass
+                    border: '1px solid rgba(255, 255, 255, 0.1)',
+                  }}
+                >
+                  {/* Number */}
+                  <p className="text-2xl font-semibold text-teal-400">
+                    {value}
+                  </p>
 
-              <div>
-                <p className="text-2xl font-semibold text-teal-400">2</p>
-                <p className="text-sm text-white/70">Internships</p>
-              </div>
-
-              <div>
-                <p className="text-2xl font-semibold text-teal-400">3</p>
-                <p className="text-sm text-white/70">AI Domains</p>
-              </div>
+                  {/* Label */}
+                  <p
+                    className="text-xs mt-1"
+                    style={{ color: 'rgba(210,220,230,0.55)' }}
+                  >
+                    {label}
+                  </p>
+                </motion.div>
+              ))}
             </div>
 
           </motion.div>

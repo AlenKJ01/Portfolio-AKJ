@@ -20,19 +20,26 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-center gap-5"
           >
-            <div className="relative w-40 h-40 lg:w-52 lg:h-52 animate-float">
-
-              {/* rotating gradient ring */}
-              <div className="absolute inset-0 rounded-full p-[3px] bg-gradient-to-r from-teal-400 via-cyan-400 to-teal-400 animate-spinSlow blur-[1px]" />
-
-              {/* profile image */}
-              <div className="relative w-full h-full rounded-full overflow-hidden border border-white/10 animate-pulseGlow">
-                <img
-                  src="/images/pppp.png"
-                  alt="Alen K Johnson"
-                  className="w-full h-full object-cover"
-                />
+            <div className="relative w-44 h-44 lg:w-52 lg:h-52 animate-float">
+              {/* Outer glow ring */}
+              {/* <div className="absolute -inset-1 rounded-full"
+                style={{
+                  background: 'conic-gradient(from 0deg, #2fd6b0, #38bdf8, #a78bfa, #2fd6b0)',
+                  filter: 'blur(6px)',
+                  opacity: 0.5,
+                  animation: 'spinSlow 8s linear infinite',
+                }}
+              /> */}
+              {/* Inner border */}
+              {/* <div className="absolute inset-0 rounded-full p-[2px]"
+                style={{ background: 'conic-gradient(from 0deg, #2fd6b0, #38bdf8, #2fd6b0)', animation: 'spinSlow 6s linear infinite' }}
+              /> */}
+              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-black animate-pulseGlow"
+                style={{ boxShadow: '0 0 30px rgba(47,214,176,0.2), inset 0 0 20px rgba(47,214,176,0.05)' }}
+              >
+                <img src="/images/pppp.png" alt="Alen K Johnson" className="w-full h-full object-cover" />
               </div>
+
 
             </div>
             <h2 className="font-display text-xl font-semibold text-foreground">Alen K Johnson</h2>
