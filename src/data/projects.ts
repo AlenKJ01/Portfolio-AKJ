@@ -39,7 +39,7 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'LLM-Based Rc2esume Matcher & ATS Builder',
+    title: 'LLM-Based Resume Matcher & ATS Builder',
     subtitle: 'AI resume matching and ATS optimization tool',
     description: [
       'Analyzes resume and job description alignment using vector similarity.',
