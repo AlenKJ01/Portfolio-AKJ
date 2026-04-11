@@ -59,26 +59,26 @@ const About = () => {
                                   hover:-translate-y-1 transition-all duration-300">
 
                     <h4 className="text-white font-semibold">
-                      Data Scientist Intern
+                      AI / ML Intern
                     </h4>
 
                     <p className="text-teal-400 text-sm mb-4">
-                      PropMarker – Design Direct Web Solutions Ltd, Kochi
+                      PropMarker – Design Direct Web Solutions Ltd, UK
                       <br />
                       Apr 2025 – Dec 2025
                     </p>
 
                     <ul className="text-white/80 text-sm space-y-2">
                       <li>
-                        ● Processed 500+ floorplans using optimized OCR & OpenCV to generate structured datasets for predictive modeling.
+                        ● Processed 500+ floorplans using OCR + OpenCV, cutting compute cost by ~50% while maintaining above 90% accuracy.
                       </li>
 
                       <li>
-                        ● Improved data usability by designing end-to-end Python APIs and MongoDB pipelines for analytics-ready datasets.
+                        ● Built FastAPI + MongoDB pipelines, reducing manual effort by ~70% and doubling workflow throughput.
                       </li>
 
                       <li>
-                        ● Built LLM-powered RAG pipelines with vector databases to automate document analysis and data extraction.
+                        ● Developed LLM-based RAG pipeline with vector databases, reducing analysis time and improving extraction consistency.
                       </li>
                     </ul>
 
@@ -143,7 +143,7 @@ const About = () => {
             </div>
 
             <p className="text-white/90 leading-relaxed mb-4">
-              I’m a Data Scientist and AI / ML Engineer focused on building intelligent
+              I’m a AI / ML Engineer and  Data Scientist focused on building intelligent
               systems that solve real-world problems.
             </p>
 

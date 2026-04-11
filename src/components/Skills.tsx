@@ -168,8 +168,13 @@ const Skills = () => {
               viewport={{ once: true }}
               transition={{ delay: ci * 0.1, duration: 0.4 }}
             >
-              <h3 className="font-display font-semibold text-lg mb-4 text-foreground">{cat.title}</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground" style={{ fontFamily: 'Syne, sans-serif' }}>
+                  {cat.title}
+                </span>
+                <div className="flex-1 h-px" style={{ background: 'rgba(255, 255, 255, 0.05)' }} />
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
                 {cat.skills.map((skill) => (
                   <SkillCard key={skill.name} skill={skill} />
                 ))}

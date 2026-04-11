@@ -11,18 +11,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 1,
-    title: 'Vision-Based Floor Plan Analytics',
-    subtitle: 'Floor Plan Analysis for PropMarker, UK',
-    description: [
-      'Processed 500+ floor plans with lightweight OCR to extract structured spatial features.',
-      'Avoided heavy detection models while maintaining accurate spatial extraction.',
-      'Enabled analytics-ready datasets for downstream modeling.',
+    "id": 1,
+    "title": "LLM Orchestrator with Validation and Fallback",
+    "subtitle": "Multi-LLM orchestration with strict validation and fault tolerance",
+    "description": [
+      "Built a FastAPI-based orchestration system integrating Ollama, Groq, and Gemini models with dynamic routing, retry logic, and fallback handling.",
+      "Implemented a validation engine with constraint checking and confidence scoring, along with FAISS-based RAG for context-aware responses."
     ],
-    tech: 'Image Processing · OpenCV · OCR · TesseractOCR · Object Detection',
-    github: '#',
-    featured: true,
-    image: 'projects/1.png',
+    "tech": "Python · FastAPI · LangChain · Ollama · Groq · Gemini · FAISS · Redis · SentenceTransformers · Docker",
+    "github": "https://github.com/AlenKJ01/LLM-Sentinel.git",
+    "featured": true,
+    "image": "projects/12.png"
   },
   {
     id: 2,
@@ -39,6 +38,20 @@ export const projects: Project[] = [
   },
   {
     id: 3,
+    title: 'Vision-Based Floor Plan Analytics',
+    subtitle: 'Floor Plan Analysis for PropMarker, UK',
+    description: [
+      'Processed 500+ floor plans with lightweight OCR to extract structured spatial features.',
+      'Avoided heavy detection models while maintaining accurate spatial extraction.',
+      'Enabled analytics-ready datasets for downstream modeling.',
+    ],
+    tech: 'Image Processing · OpenCV · OCR · TesseractOCR · Object Detection',
+    github: '#',
+    featured: true,
+    image: 'projects/1.png',
+  },
+  {
+    id: 4,
     title: 'LLM-Based Resume Matcher & ATS Builder',
     subtitle: 'AI resume matching and ATS optimization tool',
     description: [
@@ -51,7 +64,7 @@ export const projects: Project[] = [
     image: 'projects/3.png',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Real Estate Price Factor Mining & Prediction',
     subtitle: 'ML-driven property price analysis and forecasting',
     description: [
@@ -64,7 +77,7 @@ export const projects: Project[] = [
     image: 'projects/4.png',
   },
   {
-    id: 5,
+    id: 6,
     title: 'RAGLine',
     subtitle: 'Retrieval-augmented pipeline for contextual AI responses',
     description: [
@@ -77,7 +90,7 @@ export const projects: Project[] = [
     image: 'projects/5.png',
   },
   {
-    id: 6,
+    id: 7,
     title: 'ContextFlow',
     subtitle: 'Conversational memory extraction and tone-controlled response system',
     description: [
@@ -90,7 +103,7 @@ export const projects: Project[] = [
     image: 'projects/6.png',
   },
   {
-    id: 7,
+    id: 8,
     title: 'GeminiDocQA',
     subtitle: 'Ask questions over documents using Gemini',
     description: [
@@ -103,7 +116,7 @@ export const projects: Project[] = [
     image: 'projects/7.png',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Notes Versions',
     subtitle: 'Version-controlled note tracking and comparison system',
     description: [
@@ -116,7 +129,7 @@ export const projects: Project[] = [
     image: 'projects/8.png',
   },
   {
-    id: 9,
+    id: 10,
     title: 'NASA Data Explorer',
     subtitle: 'Explore NASA space data using APIs',
     description: [
@@ -129,7 +142,7 @@ export const projects: Project[] = [
     image: 'projects/9.png',
   },
   {
-    id: 10,
+    id: 11,
     title: 'Mediconnect',
     subtitle: 'Healthcare appointment and patient interaction platform',
     description: [
