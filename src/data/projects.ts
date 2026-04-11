@@ -73,7 +73,7 @@ export const projects: Project[] = [
     ],
     tech: 'Python · Streamlit · Gemini · Serper · MongoDB',
     github: 'https://github.com/AlenKJ01/Real-Estate-Price-Factor-Mining-Prediction-Engine.git',
-    featured: true,
+    featured: false,
     image: 'projects/4.png',
   },
   {
