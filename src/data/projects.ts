@@ -10,7 +10,7 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  {
+    {
     "id": 1,
     "title": "LLM Orchestrator with Validation and Fallback",
     "subtitle": "Multi-LLM orchestration with strict validation and fault tolerance",
@@ -25,6 +25,19 @@ export const projects: Project[] = [
   },
   {
     id: 2,
+    title: 'Automated Code Review & Risk Detection System',
+    subtitle: 'Repository-level vulnerability and code quality analysis system',
+    description: [
+      'Built a repository-level analysis system using FastAPI, LangChain, and GitHub API/repo cloning to detect vulnerabilities and code quality issues.',
+      'Implemented static analysis with AST parsing and structured reporting to improve fault detection and overall code reliability.',
+    ],
+    tech: 'FastAPI · LangChain · AST Parsing · JSON · GitHub Repo Cloning · Pydantic',
+    github: 'https://github.com/your-username/your-repo.git',
+    featured: true,
+    image: 'projects/13.png',
+  },
+  {
+    id: 3,
     title: 'Spec Drift Radar',
     subtitle: 'Automated specification drift detection system',
     description: [
@@ -37,7 +50,7 @@ export const projects: Project[] = [
     image: 'projects/2.png',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Vision-Based Floor Plan Analytics',
     subtitle: 'Floor Plan Analysis for PropMarker, UK',
     description: [
@@ -51,7 +64,7 @@ export const projects: Project[] = [
     image: 'projects/1.png',
   },
   {
-    id: 4,
+    id: 5,
     title: 'LLM-Based Resume Matcher & ATS Builder',
     subtitle: 'AI resume matching and ATS optimization tool',
     description: [
@@ -60,11 +73,11 @@ export const projects: Project[] = [
     ],
     tech: 'Python · FastAPI · FAISS · Reportlab · Gemini · Vector Similarity',
     github: '#',
-    featured: true,
+    featured: false,
     image: 'projects/3.png',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Real Estate Price Factor Mining & Prediction',
     subtitle: 'ML-driven property price analysis and forecasting',
     description: [
@@ -77,7 +90,7 @@ export const projects: Project[] = [
     image: 'projects/4.png',
   },
   {
-    id: 6,
+    id: 7,
     title: 'RAGLine',
     subtitle: 'Retrieval-augmented pipeline for contextual AI responses',
     description: [
@@ -90,7 +103,7 @@ export const projects: Project[] = [
     image: 'projects/5.png',
   },
   {
-    id: 7,
+    id: 8,
     title: 'ContextFlow',
     subtitle: 'Conversational memory extraction and tone-controlled response system',
     description: [
@@ -103,7 +116,7 @@ export const projects: Project[] = [
     image: 'projects/6.png',
   },
   {
-    id: 8,
+    id: 9,
     title: 'GeminiDocQA',
     subtitle: 'Ask questions over documents using Gemini',
     description: [
@@ -116,7 +129,7 @@ export const projects: Project[] = [
     image: 'projects/7.png',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Notes Versions',
     subtitle: 'Version-controlled note tracking and comparison system',
     description: [
@@ -129,7 +142,7 @@ export const projects: Project[] = [
     image: 'projects/8.png',
   },
   {
-    id: 10,
+    id: 11,
     title: 'NASA Data Explorer',
     subtitle: 'Explore NASA space data using APIs',
     description: [
@@ -142,7 +155,7 @@ export const projects: Project[] = [
     image: 'projects/9.png',
   },
   {
-    id: 11,
+    id: 12,
     title: 'Mediconnect',
     subtitle: 'Healthcare appointment and patient interaction platform',
     description: [
