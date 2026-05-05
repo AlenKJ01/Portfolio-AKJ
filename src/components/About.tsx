@@ -37,7 +37,7 @@ const About = () => {
             <div className="flex items-center gap-2 mb-8">
               <Briefcase size={14} style={{ color: '#2fd6b0' }} />
               <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase" style={{ fontFamily: 'Syne, sans-serif' }}>
-                Internship Experience
+                Experience
               </h3>
             </div>
 
@@ -46,12 +46,11 @@ const About = () => {
               {/* vertical line */}
               <div className="absolute left-2 top-0 bottom-0 w-[1px] bg-white/10"></div>
 
-              <div className="space-y-16">
+              <div className="space-y-4">
 
-                {/* Internship 1 */}
+                {/* Experience 0 - Current Role */}
                 <div className="relative">
 
-                  {/* dot */}
                   <div className="absolute -left-[3px] top-4 w-3 h-3 bg-teal-400 rounded-full shadow-md shadow-teal-400/40"></div>
 
                   <div className="ml-8 bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-md
@@ -59,68 +58,92 @@ const About = () => {
                                   hover:-translate-y-1 transition-all duration-300">
 
                     <h4 className="text-white font-semibold">
-                      AI / ML Intern
+                      Data Scientist
                     </h4>
 
                     <p className="text-teal-400 text-sm mb-4">
-                      PropMarker – Design Direct Web Solutions Ltd, UK
+                      Cambridge Infotech - Bengaluru
                       <br />
-                      Apr 2025 – Dec 2025
+                      May 2026 - Present
                     </p>
-
-                    <ul className="text-white/80 text-sm space-y-2">
-                      <li>
-                        ● Processed 500+ floorplans using OCR + OpenCV, cutting compute cost by ~50% while maintaining above 90% accuracy.
-                      </li>
-
-                      <li>
-                        ● Built FastAPI + MongoDB pipelines, reducing manual effort by ~70% and doubling workflow throughput.
-                      </li>
-
-                      <li>
-                        ● Developed LLM-based RAG pipeline with vector databases, reducing analysis time and improving extraction consistency.
-                      </li>
-                    </ul>
 
                   </div>
                 </div>
+
+
+                {/* Internship 1 */}
+                <a 
+                  href="https://propmarker.co.uk/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="relative">
+
+                    <div className="absolute -left-[3px] top-4 w-3 h-3 bg-teal-400 rounded-full shadow-md shadow-teal-400/40"></div>
+
+                    <div className="ml-8 bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-md
+                                    hover:border-teal-400/40 hover:shadow-xl hover:shadow-teal-500/10
+                                    hover:-translate-y-1 transition-all duration-300">
+
+                      <h4 className="text-white font-semibold">
+                        Data Scientist Intern
+                      </h4>
+
+                      <p className="text-teal-400 text-sm mb-4">
+                        PropMarker – Design Direct Web Solutions Ltd, Kochi
+                        <br />
+                        Apr 2025 – Dec 2025
+                      </p>
+                      <ul className="text-white/80 text-sm space-y-2">
+                        <li>● Processed 500+ floorplans using optimized OCR & OpenCV to generate structured datasets for predictive modeling.</li>
+                        <li>● Improved data usability by designing end-to-end Python APIs and MongoDB pipelines for analytics-ready datasets.</li>
+                        <li>● Built LLM-powered RAG pipelines with vector databases to automate document analysis and data extraction.</li>
+                      </ul>
+
+                      {/* content stays same */}
+
+                    </div>
+                  </div>
+                </a>
 
 
                 {/* Internship 2 */}
-                <div className="relative">
+                <a 
+                  href="https://www.geeksforgeeks.org/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="relative">
 
-                  <div className="absolute -left-[3px] top-4 w-3 h-3 bg-teal-400 rounded-full shadow-md shadow-teal-400/40"></div>
+                    <div className="absolute -left-[3px] top-4 w-3 h-3 bg-teal-400 rounded-full shadow-md shadow-teal-400/40"></div>
 
-                  <div className="ml-8 bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-md
-                                  hover:border-teal-400/40 hover:shadow-xl hover:shadow-teal-500/10
-                                  hover:-translate-y-1 transition-all duration-300">
+                    <div className="ml-8 bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-md
+                                    hover:border-teal-400/40 hover:shadow-xl hover:shadow-teal-500/10
+                                    hover:-translate-y-1 transition-all duration-300">
 
-                    <h4 className="text-white font-semibold">
-                      Data Science & Machine Learning Intern
-                    </h4>
+                      <h4 className="text-white font-semibold">
+                        Data Science & Machine Learning Intern
+                      </h4>
 
-                    <p className="text-teal-400 text-sm mb-4">
-                      GeeksForGeeks – Bengaluru
-                      <br />
-                      Aug 2024 – Dec 2024
-                    </p>
+                      <p className="text-teal-400 text-sm mb-4">
+                        GeeksForGeeks – Bengaluru
+                        <br />
+                        Aug 2024 – Dec 2024
+                      </p>
 
-                    <ul className="text-white/80 text-sm space-y-2">
-                      <li>
-                        ● Improved dataset quality and model reliability through systematic data cleaning, preprocessing, and feature engineering.
-                      </li>
+                      <ul className="text-white/80 text-sm space-y-2">
+                        <li>● Improved dataset quality and model reliability through systematic data cleaning, preprocessing, and feature engineering.</li>
+                        <li>● Transformed raw metrics into business-ready insights using Power BI dashboards for KPI tracking.</li>
+                        <li>● Supported segmentation and prediction tasks that enhanced operational understanding and planning.</li>
+                      </ul>
 
-                      <li>
-                        ● Transformed raw metrics into business-ready insights using Power BI dashboards for KPI tracking.
-                      </li>
+                      {/* content stays same */}
 
-                      <li>
-                        ● Supported segmentation and prediction tasks that enhanced operational understanding and planning.
-                      </li>
-                    </ul>
-
+                    </div>
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -143,7 +166,7 @@ const About = () => {
             </div>
 
             <p className="text-white/90 leading-relaxed mb-4">
-              I’m a AI / ML Engineer and  Data Scientist focused on building intelligent
+              I’m a Data Scientist and AI / ML Engineer focused on building intelligent
               systems that solve real-world problems.
             </p>
 
